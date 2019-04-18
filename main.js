@@ -6,9 +6,8 @@ const {
   filterForDefinedPath,
   removeNodeModulesDirectory
 } = require('./facilities');
-const path = require('path');
 
-const arg = process.cwd();
+const arg = `${process.cwd()}${process.argv[2] ? '\\' + process.argv[2] : ''}`;
 
 scanDirectory(arg)
   .then(filterForDefinedPath)
