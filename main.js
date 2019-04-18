@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { scanDirectory } = require('./scanner');
 const {
   filterForNodePackage,
@@ -6,10 +8,7 @@ const {
 } = require('./facilities');
 const path = require('path');
 
-const arg =
-  process.argv.length >= 1
-    ? path.resolve(__dirname, process.argv[1])
-    : process.cwd();
+const arg = process.cwd();
 
 scanDirectory(arg)
   .then(filterForDefinedPath)
