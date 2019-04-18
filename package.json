@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "rimraf": "^2.6.3"
+  },
+  "bin": {
+    "node-modules-eraser": "./main.js"
   }
 }
