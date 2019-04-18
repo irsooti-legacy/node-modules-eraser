@@ -1,0 +1,12 @@
+{
+  "name": "node-modules-eraser",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.3"
+  }
+}
